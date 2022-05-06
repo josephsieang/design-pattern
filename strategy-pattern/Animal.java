@@ -6,6 +6,6 @@ public class Animal {
   }
 
   public void setFlyingAbility(FlyingAbility newFlyingAbility) {
-    flyingAbility = newFlyingAbility;
+    this.flyingAbility = newFlyingAbility;
   }
 }
