@@ -1,17 +1,17 @@
 public class GrabStocks {
   public static void main(String[] args) {
-    StockGrabber stockGrabber = new StockGrabber();
+    StockSubject stockSubject = new StockSubject();
 
-    new StockObserver(stockGrabber);
+    new StockObserver(stockSubject);
 
-    stockGrabber.setIBMPrice(197);
-    stockGrabber.setApplPrice(166);
-    stockGrabber.setGooglePrice(200);
+    stockSubject.setIBMPrice(197);
+    stockSubject.setApplPrice(166);
+    stockSubject.setGooglePrice(200);
 
-    new StockObserver(stockGrabber);
+    new StockObserver(stockSubject);
 
-    stockGrabber.setIBMPrice(1000);
-    stockGrabber.setApplPrice(700);
-    stockGrabber.setGooglePrice(500);
+    stockSubject.setIBMPrice(1000);
+    stockSubject.setApplPrice(700);
+    stockSubject.setGooglePrice(500);
   }
 }

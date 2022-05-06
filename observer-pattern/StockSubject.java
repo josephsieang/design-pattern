@@ -1,12 +1,12 @@
 import java.util.ArrayList;
 
-public class StockGrabber implements Subject {
+public class StockSubject implements Subject {
   private ArrayList<Observer> observers;
   private double ibmPrice;
   private double applPrice;
   private double googlePrice;
 
-  public StockGrabber() {
+  public StockSubject() {
     this.observers = new ArrayList<Observer>();
   }
 
